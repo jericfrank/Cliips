@@ -117,6 +117,8 @@ export default class Uploads extends React.Component {
 	            	}
 	          	}
 
+	          	console.log(file);
+	          	
 	          	axios.post('/api/upload', data, config )
 	            	.then( (res) => {
 	            		this.props.dispatch({type: "ADD_UPLOADS", payload: res.data})

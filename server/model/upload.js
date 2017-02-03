@@ -12,12 +12,12 @@ var uploadScheme = new Schema({
     path: String,
     size: String,
     meta: {
-        userId: String,
+    	userId: String,
     	posted: String,
     	title: String,
-    	description: String
+    	description: String,
     }
-})
+});
 uploadScheme.plugin(timestamps)
 
 module.exports = mongoose.model('upload', uploadScheme)
